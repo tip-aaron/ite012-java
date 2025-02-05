@@ -62,9 +62,9 @@ class State
 	}
     
     public void setCourseCode1(String cc1)
-	{
+{
 	        courseCode1 = cc1;
-	}
+}
     
     public void setCourseCode2(String cc2)
 	{
