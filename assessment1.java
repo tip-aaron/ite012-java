@@ -64,26 +64,26 @@ class State
     public void setCourseCode1(String cc1)
 	{
         courseCode1 = cc1;
-    }
+	}
     
     public void setCourseCode2(String cc2)
 	{
         courseCode2 = cc2;
-    }
+	}
     
     public void setCourseUnit1(int cu1) 
 	{
         courseUnit1 = cu1;
         
         calculateTotalUnits();
-    }
+	}
     
     public void setCourseUnit2(int cu2) 
 	{
         courseUnit2 = cu2;
         
         calculateTotalUnits();
-    }
+	}
     
     public void setCourseGrade1(double cg1)
 	{
@@ -93,15 +93,15 @@ class State
     public void setCourseGrade2(double cg2)
 	{
         courseGrade2 = cg2;
-    }
+	}
     
     public double getGWA()
 	{
         return (courseGrade1 * courseUnit1 + courseGrade2 * courseUnit2) / totalUnits;
-    }
+	}
     
     private void calculateTotalUnits()
 	{
         totalUnits = courseUnit1 + courseUnit2;
-    }
+	}
 }
