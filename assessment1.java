@@ -49,58 +49,58 @@ public class Main
 
 class State
 {
-    public static final String NAME = "Aaron Angelo M. Ragudos";
-    public static final String SECTION = "CS12S2";
+	public static final String NAME = "Aaron Angelo M. Ragudos";
+	public static final String SECTION = "CS12S2";
+	    
+	private String studentName,courseCode1,courseCode2;
+	private int courseUnit1, courseUnit2, totalUnits;
+	private double courseGrade1, courseGrade2;
     
-    private String studentName,courseCode1,courseCode2;
-    private int courseUnit1, courseUnit2, totalUnits;
-    private double courseGrade1, courseGrade2;
-    
-    public void setStudentName(String name)
+    	public void setStudentName(String name)
 	{
-	        studentName = name;
+		studentName = name;
 	}
     
-    public void setCourseCode1(String cc1)
-{
+	public void setCourseCode1(String cc1)
+	{
 	        courseCode1 = cc1;
-}
+	}
     
-    public void setCourseCode2(String cc2)
+    	public void setCourseCode2(String cc2)
 	{
 	        courseCode2 = cc2;
 	}
     
-    public void setCourseUnit1(int cu1) 
+    	public void setCourseUnit1(int cu1) 
 	{
 	        courseUnit1 = cu1;
 	        
 	        calculateTotalUnits();
 	}
     
-    public void setCourseUnit2(int cu2) 
+    	public void setCourseUnit2(int cu2) 
 	{
 	        courseUnit2 = cu2;
 	        
 	        calculateTotalUnits();
 	}
     
-    public void setCourseGrade1(double cg1)
+  	public void setCourseGrade1(double cg1)
 	{
         	courseGrade1 = cg1;
 	}
     
-    public void setCourseGrade2(double cg2)
+    	public void setCourseGrade2(double cg2)
 	{
         	courseGrade2 = cg2;
 	}
     
-    public double getGWA()
+    	public double getGWA()
 	{
       		return (courseGrade1 * courseUnit1 + courseGrade2 * courseUnit2) / totalUnits;
 	}
     
-    private void calculateTotalUnits()
+    	private void calculateTotalUnits()
 	{
        		totalUnits = courseUnit1 + courseUnit2;
 	}
