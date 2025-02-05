@@ -4,46 +4,46 @@ public class Main
 {
 	public static void main(String[] args)
 	{
-		    println("Name: " + State.NAME);
-		    println("Section: " + State.SECTION);
+		println("Name: " + State.NAME);
+		println("Section: " + State.SECTION);
 		    
-		    State state = new State();
-		    Scanner scanner = new Scanner(System.in);
+		State state = new State();
+		Scanner scanner = new Scanner(System.in);
 		    
-		    print("Enter student name: ");
-		    state.setStudentName(scanner.nextLine());
+		print("Enter student name: ");
+		state.setStudentName(scanner.nextLine());
 		    
-		    print("Enter course code 1: ");
-		    state.setCourseCode1(scanner.nextLine());
+		print("Enter course code 1: ");
+		state.setCourseCode1(scanner.nextLine());
 		    
-		    print("Enter course grade 1: ");
-		    state.setCourseGrade1(Double.parseDouble(scanner.nextLine()));
+		print("Enter course grade 1: ");
+		state.setCourseGrade1(Double.parseDouble(scanner.nextLine()));
 		    
-		    print("Enter course unit 1: ");
-		    state.setCourseUnit1(Integer.parseInt(scanner.nextLine()));
+		print("Enter course unit 1: ");
+		state.setCourseUnit1(Integer.parseInt(scanner.nextLine()));
 		    
-		    print("Enter course code 2: ");
-		    state.setCourseCode2(scanner.nextLine());
+		print("Enter course code 2: ");
+		state.setCourseCode2(scanner.nextLine());
 		    
-		    print("Enter course grade 2: ");
-		    state.setCourseGrade2(Double.parseDouble(scanner.nextLine()));
+		print("Enter course grade 2: ");
+		state.setCourseGrade2(Double.parseDouble(scanner.nextLine()));
 		    
-		    print("Enter course unit 2: ");
-		    state.setCourseUnit2(Integer.parseInt(scanner.nextLine()));
+		print("Enter course unit 2: ");
+		state.setCourseUnit2(Integer.parseInt(scanner.nextLine()));
 		    
-		    scanner.close();
+		scanner.close();
 		    
-		    println("Your General Weighted Average (GWA): " + Math.round(state.getGWA()));
+		println("Your General Weighted Average (GWA): " + Math.round(state.getGWA()));
 	}
 	
 	private static void print(String msg)
 	{
-		    System.out.print(msg);
+		System.out.print(msg);
 	}
 	
 	private static void println(String msg)
 	{
-		    System.out.println(msg);
+		System.out.println(msg);
 	}
 }
 
